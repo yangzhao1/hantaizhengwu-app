@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/bg">
+
+        <include
+            layout="@layout/toolbarback"
+            ></include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="办件总体评价"
+                android:textColor="@color/textcolor"
+                android:textSize="?size"
+                />
+
+            <com.example.gs.gonser.govenmentservice.utils.MyRatingBar
+                android:id="@+id/star1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:starCount="5"
+                android:gravity="center"
+                app:starEmpty="@mipmap/star_kong"
+                app:starFill="@mipmap/star_man"
+                app:starHalf="@mipmap/star_ban"
+                app:starImageSize="25dp"
+                app:starPadding="1dp"
+                app:starStep="0"
+                app:stepSize="Half"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="服务质量评价"
+                android:textColor="@color/textcolor"
+                android:textSize="?size"
+                />
+
+            <com.example.gs.gonser.govenmentservice.utils.MyRatingBar
+                android:id="@+id/star2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:starCount="5"
+                android:gravity="center"
+                app:starEmpty="@mipmap/star_kong"
+                app:starFill="@mipmap/star_man"
+                app:starHalf="@mipmap/star_ban"
+                app:starImageSize="25dp"
+                app:starPadding="1dp"
+                app:starStep="0"
+                app:stepSize="Half"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="办件时间评价"
+                android:textColor="@color/textcolor"
+                android:textSize="?size"
+                />
+
+            <com.example.gs.gonser.govenmentservice.utils.MyRatingBar
+                android:id="@+id/star3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:starCount="5"
+                android:gravity="center"
+                app:starEmpty="@mipmap/star_kong"
+                app:starFill="@mipmap/star_man"
+                app:starHalf="@mipmap/star_ban"
+                app:starImageSize="25dp"
+                app:starPadding="1dp"
+                app:starStep="0"
+                app:stepSize="Half"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="业务专业评价"
+                android:textColor="@color/textcolor"
+                android:textSize="?size"
+                />
+
+            <com.example.gs.gonser.govenmentservice.utils.MyRatingBar
+                android:id="@+id/star4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:starCount="5"
+                android:gravity="center"
+                app:starEmpty="@mipmap/star_kong"
+                app:starFill="@mipmap/star_man"
+                app:starHalf="@mipmap/star_ban"
+                app:starImageSize="25dp"
+                app:starPadding="1dp"
+                app:starStep="0"
+                app:stepSize="Half"
+                />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_margin="20dp"
+            android:hint="说点什么吧，不少于五个字"
+            android:gravity="left"
+            android:padding="10dp"
+            android:textSize="?size"
+            android:textColor="@color/textcolor"
+            android:background="@drawable/shape_d"
+            />
+
+        <TextView
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:gravity="center"
+            android:textSize="?sizemiddle"
+            android:background="@drawable/shape_bgs_theme"
+            android:textColor="@color/white"
+            android:text="提交"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

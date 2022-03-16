@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="sizesosmall" format="reference|dimension" />
+    <attr name="sizesmall" format="reference|dimension" />
+    <attr name="size" format="reference|dimension" />
+    <attr name="sizemiddle" format="reference|dimension" />
+    <attr name="sizebig" format="reference|dimension" />
+</resources>

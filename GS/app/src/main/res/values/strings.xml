@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">汉台政务</string>
+
+    <string name="collect">我的收藏</string>
+    <string name="dothing">我的办件</string>
+    <string name="subscribe">我的预约</string>
+    <string name="complaint">咨询投诉</string>
+    <string name="evaluate">我的评价</string>
+    <string name="message">我的消息</string>
+    <string name="zixun">我的咨询</string>
+    <string name="tousu">我的投诉</string>
+    <string name="setting">设置</string>
+    <string name="zanwu">暂无数据</string>
+</resources>

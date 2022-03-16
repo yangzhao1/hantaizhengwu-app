@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbarback"></include>
+
+
+    <RelativeLayout
+        android:id="@+id/changePSRel"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/changePS"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/login_lock"/>
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="修改密码"
+            android:textColor="@color/black"
+            android:textSize="?sizesmall"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/changePS"/>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/right"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"/>
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/exit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="退出"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:background="@drawable/shape_bgs_theme"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

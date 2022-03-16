@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="3dp"
+                android:layout_centerVertical="true"
+                android:layout_height="15dp"
+                android:background="@color/theme_color"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="?sizesmall"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/theme_color"
+                android:text="政策解读"/>
+
+            <TextView
+                android:id="@+id/morenews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="查看更多"
+                android:textSize="?sizesosmall"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/line"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="5dp"/>
+
+        <!--
+        <include
+            layout="@layout/notice_items"
+            ></include>
+-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp">
+<!-- recyclerView的高度必须比LinearLayout的高度大，才可以滑动出数据 -->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycleview"
+                android:layout_width="match_parent"
+                android:layout_height="480dp">
+
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
